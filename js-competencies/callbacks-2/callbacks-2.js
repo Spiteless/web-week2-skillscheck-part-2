@@ -11,6 +11,7 @@
 
   //Code here
 
+  let invokesCallbacks = (num, cb1, cb2) => (num > 10) ? cb1(num) : cb2(num)
 
 //////////////////PROBLEM 2////////////////////
 
@@ -23,8 +24,10 @@
   var greeting;
 
   function timedGreeting(callback){
-
     //Code here
+    setTimeout( () => {
+      greeting = callback(greeting)}
+    , 1000)
 
     
   }
