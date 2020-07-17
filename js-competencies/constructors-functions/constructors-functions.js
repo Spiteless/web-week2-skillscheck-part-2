@@ -40,7 +40,7 @@ function TestScores() {
   this.percent;
 
   return this.name + this.percent
-}
+}sada
 
 
 //Now create a new TestScore with the above constructor function, and save it in a variable called suzy. Suzy got a 98 on the test.

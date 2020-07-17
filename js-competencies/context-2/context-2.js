@@ -27,11 +27,11 @@ var book2 = {
 // variable named book1CheckOut.
 
 // CODE HERE
-
+book1CheckOut = book1.checkOut()
 
 // What is the context of running book1.checkOut()?
 // var q1Context = "explicit"
-// var q1Context = 'implicit';
+var q1Context = 'implicit';
 // var q1Context = "default"
 // var q1Context = "new"
 
@@ -41,10 +41,11 @@ var book2 = {
 // variable named book2CheckOut.
 
 // CODE HERE
-
+book2CheckOut = book2.checkOut()
+console.log(book2)
 
 // What is the context of running the function checkOut on book1?
-// var q2Context = 'explicit';
+var q2Context = 'explicit';
 // var q2Context = "implicit"
 // var q2Context = "default"
 // var q2Context = "new"

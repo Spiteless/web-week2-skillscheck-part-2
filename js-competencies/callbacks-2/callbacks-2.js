@@ -28,7 +28,5 @@
     setTimeout( () => {
       greeting = callback(greeting)}
     , 1000)
-
-    
   }
 

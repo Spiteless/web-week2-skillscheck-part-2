@@ -12,7 +12,9 @@ function addDucks(arr, ind) {
 
   //WRITE YOUR FOR-LOOP HERE
   //For your iterator, declare it with the let keyword, and name it "i"
-  
+  for (let i=0; i< arr.length; i++){
+    arr[i] += "Duck"
+  }
 
   //DO NOT TOUCH THIS
   return [arr, ind]
@@ -27,7 +29,7 @@ function addDucks(arr, ind) {
 
 if (true) {
   //CODE HERE
-
+  let color = "red";
 
   //DO NOT TOUCH THIS LINE
   getter.get(color)
@@ -39,7 +41,7 @@ if (true) {
 //Assign it the value of "Hello".
 
 //Code here
-
+const greetingsEarthlings = "Hello"
 
 //////////////////PROBLEM 4////////////////////
 //Create a function called madLib that takes in a
@@ -52,7 +54,9 @@ if (true) {
 //look it up, check out the documentation.
 
 //Code here
-
+function madLib(str) {
+  return `${str}, my dear Watson.`
+}
 
 //////////////////PROBLEM 5////////////////////
 //Based on the following code, answer the question below:
@@ -69,7 +73,7 @@ var obj = { a: "a", b: "b", c: "c" }
 //used spread operators.
 
 // var answers = ["Example A", "Example B", "Example C", "Example D"]
-// var answers = ["Example B", "Example C", "Example D"]
+var answers = ["Example B", "Example C", "Example D"]
 // var answers = ["Example A", "Example B"]
 // var answers = ["Example C", "Example D"]
 
@@ -80,7 +84,7 @@ var obj = { a: "a", b: "b", c: "c" }
 //string without spaces.
 
 //Code here
-
+let cleanUp = (str) => str.split("").filter( (v) => v !== " ").join("")
 
 //////////////////PROBLEM 7////////////////////
 //Finish the function below. Assume that the
@@ -91,7 +95,8 @@ var obj = { a: "a", b: "b", c: "c" }
 function whatOcean(obj) {
 
   //Code here
-  
+  var {ocean} = obj
+  return ocean
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -104,4 +109,6 @@ function whatOcean(obj) {
 //plus the last element of the rest parameter, like so:
 //"spaghetti & liver with onions"
 
-
+function leftovers(str, ...args){
+  return str + " & " + args[args.length-1]
+}
