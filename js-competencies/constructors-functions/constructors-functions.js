@@ -3,7 +3,8 @@
 
 // Get the following constructor function to pass the tests.
 
-//BROKEN ON PURPOSE 
+//BROKEN ON PURPOSE
+//Fix the errors in function EgyptianGoddesses
 
 function EgyptianGoddesses(name, oversees, strength, weakness) {
   name = name;
@@ -33,7 +34,8 @@ var maatCharacteristics = ['Maat', 'Truth and Justice', 'Balancing and Just', 'E
 
 // Get the following constructor function to pass the tests.
 
-//BROKEN ON PURPOSE 
+//BROKEN ON PURPOSE
+//Fix the errors in function TestScores
 
 function TestScores() {
   this.name;
